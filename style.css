@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container, .dashboard {
+  width: 90%;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+a {
+  color: #00ffe5;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+h2, h3 {
+  margin-bottom: 15px;
+}
+
+.task-section, .withdraw-section, .profile-section, .footer-section {
+  background: rgba(255, 255, 255, 0.07);
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

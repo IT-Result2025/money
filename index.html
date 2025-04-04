@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reward Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login -->
+  <div class="login-container glass" id="loginBox">
+    <h2>Login to Earn Coins 💰</h2>
+    <input type="text" id="loginMobile" placeholder="Mobile Number" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button onclick="loginUser()">Login</button>
+    <p>No account? <a href="signup.html">Sign up here</a></p>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard hidden" id="dashboard">
+    <h2>Welcome, <span id="username"></span> 👋</h2>
+    <p>You have <span id="coinCount">0</span> 🪙 coins</p>
+
+    <!-- Tasks -->
+    <div class="task-section">
+      <h3>📺 Watch & Subscribe Task</h3>
+      <p>Watch the video and subscribe to earn +100 coins!</p>
+      <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+        <button>🎥 Go to YouTube</button>
+      </a>
+      <button onclick="claimYouTubeReward()">✅ I Subscribed</button>
+    </div>
+
+    <!-- Withdraw -->
+    <div class="withdraw-section">
+      <h3>💸 Withdraw Coins</h3>
+      <p>Minimum 5000 coins = ₹2800 (within 2 hours)</p>
+      <button onclick="withdraw()">Withdraw Now</button>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile-section">
+      <h3>👤 Your Profile</h3>
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Mobile:</strong> <span id="profileMobile"></span></p>
+      <p><strong>Total Coins:</strong> <span id="profileCoins"></span></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+      <a href="https://t.me/samplegroup" target="_blank">
+        <button>🔗 Join Our Telegram</button>
+      </a><br><br>
+      <button onclick="logout()">🚪 Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
